@@ -1,0 +1,72 @@
+
+
+  <!-- Rest of the HTML content goes here -->
+
+  {% extends 'base.html' %}
+
+
+  {% block title %}
+  Books
+  {% endblock %}
+  
+
+  {% load static %}
+  {% block content %}
+  <style>
+    body {
+      background-image: url('{% static "C:\Users\athil\OneDrive\Desktop\new-project\work\static\image\back.jpg" %}');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+    }
+  </style>    
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+  .center {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="center">
+  <h1>Available Books (Login to buy books)</h1>
+</div>
+
+</body>
+</html>
+
+  <hr>
+  <div class="container text-center bg-light">
+
+
+  {% for b in books %}
+    
+
+  <div class="card text-center mx-3 my-3" style="width: 18rem; display:inline-block">
+      <img src="{{b.boo_image.url}}" class="card-img-top" alt="...">
+      <div class="card-body" style= "background-color:black;color:white">        
+        <h5 class="card-title ">{{b.boo_name}}</h5>
+        <p class="card-text">{{b.boo_author}}</p>
+        <p class="card-text">{{b.boo_type}}</p>
+        <p class="card-text">{{b.boo_year}}</p>
+          
+          
+        </div>
+      </div>
+  
+  
+    {% endfor %}
+ </div>
+
+
+ 
+ <hr>
+ <div class="container text-center bg-light">
+  
+
+{% endblock %}
+  
+  

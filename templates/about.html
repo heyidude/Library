@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+about
+{% endblock %}
+
+
+{% block content %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Library Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+        
+        .about-section {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Library Management</h1>
+      
+    </header>
+    
+    <main>
+        <section class="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to our library management website! We are dedicated to providing you with an exceptional reading experience. Our collection of books spans various genres, and our user-friendly platform makes it easy for you to explore and borrow your favorite titles.</p>
+            <p>Our team is passionate about promoting a love for literature and fostering a sense of community among book enthusiasts. Whether you're a student, a professional, or simply someone who enjoys reading, we invite you to join our library and embark on a journey through the captivating world of books.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Library Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+{% endblock %}
+

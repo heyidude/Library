@@ -1,0 +1,18 @@
+.glowing-text {
+    animation: glowing 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glowing {
+    0% {
+      color: #ffffff;
+      text-shadow: 0 0 5px #f68138;
+    }
+    100% {
+      color: #0033ff;
+      text-shadow: 0 0 20px #1c0112;
+    }
+  }
+.container {
+  text-align: center;
+}
+  

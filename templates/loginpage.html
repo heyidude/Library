@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Books
+{% endblock %}
+
+{% load static %}
+{% block content %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'C:\Users\athil\OneDrive\Desktop\new-project\work\static\css\lig.css' %}">
+
+
+<div class="container">
+  <br><br><br>
+  <h1 class="glowing-text">You have logged in successfully</h1>
+  <a href="{% url 'buy' %}">Click to buy available books</a>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+HOME
+{% endblock %}
+
+
+{% block content %}
+{% load static%}
+
+{% load static %}
+<style>
+  body {
+    background-image: url('{% static "C:\Users\athil\OneDrive\Desktop\new-project\work\static\image\back.jpg" %}');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+</style>    
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .intro-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .intro-image img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Library</h1>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <div class="intro-content">
+                <h2>DIGITAL LIBRARY</h2>
+                <p>Welcome to our library management website! We provide a wide range of books and resources for our members to enjoy. Explore our collection and start your reading journey today.</p>
+                <a href="{% url 'signup' %}" class="button">Signup</a>
+            </div>
+            <div class="intro-image">
+                <img src="{% static 'C:\Users\athil\OneDrive\Desktop\new-project\work\static\image\new.avif' %}" alt="Girl with a Book">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+{% endblock %}
+
